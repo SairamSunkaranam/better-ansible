@@ -1,8 +1,0 @@
----
-- name: fetch remote yum repo file
-  fetch:
-    src: ./files/{{ REPO_FILE }}
-    dest: ./templates/{{ REPO_FILE }}
-    flat: yes
-  tags:
-    - get_repo_file
