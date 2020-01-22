@@ -1,15 +1,4 @@
 ---
-# preflight
-
-- name: pre-flight, retrieve assets from bastion host
-  hosts: bastion
-  gather_facts: false
-  become: true
-  tags:
-    - pre-flight
-
-  roles:
-    - { name: pre-flight }
 
 - name: common configuration across all target hosts
   hosts: 3tierapp
